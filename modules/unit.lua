@@ -14,10 +14,10 @@ function Unit.constructor(self)
     self.rotationRadius = 100
     self.phase = 0
     self.startPos = vmath.vector3()
-    self.id = undefined
+    self.id = nil
 end
 function Unit.update(self,dt)
-    if self.id==undefined then
+    if self.id==nil then
         return
     end
     self.phase=self.phase+dt
