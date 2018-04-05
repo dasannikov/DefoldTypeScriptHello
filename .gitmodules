@@ -1,0 +1,3 @@
+[submodule "tssrc/DefoldTypeScript"]
+	path = tssrc/DefoldTypeScript
+	url = https://github.com/dasannikov/DefoldTypeScript.git

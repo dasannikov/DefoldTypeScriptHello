@@ -1,10 +1,12 @@
+//@defold /scripts/main.script
+
 require("typescript_defoldlib")
 import { Unit } from "./modules/unit";
 
 let unitList: Array<Unit> = []
 
 function init(self: any) {
-    msg.post(".", "acquire_input_focus")
+    print("The amazing world of Defold TypeScript")
 
     for(let i = 0; i < 100; i++)
         unitList.push(new Unit());

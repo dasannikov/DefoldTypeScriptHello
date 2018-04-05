@@ -1,14 +1,14 @@
-// defold /scripts/unit.script
+//@defold /scripts/modules/unit.lua
 
 export class Unit {
     
     private rotationRadius = 100;    
     private phase = 0;    
     private startPos = vmath.vector3();
-    private id: any = null;
+    private id: any = undefined;
     
     public update(dt: number) {
-        if(this.id == null) return
+        if(this.id == undefined) return
         this.phase += dt
         let pos = vmath.vector3(this.startPos);
         pos.x += math.cos(this.phase) * this.rotationRadius
@@ -23,6 +23,6 @@ export class Unit {
         this.startPos.x = math.random(200, 800)
         this.startPos.y = math.random(200, 500)
         this.startPos.z = 0
-        this.id = factory.create("/go#factory")
+        this.id = factory.create("/main#factory")
     }
 }
