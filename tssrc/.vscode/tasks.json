@@ -6,7 +6,10 @@
         {
             "label": "TS to Lua",
             "type": "shell",
-            "command": "build.cmd",
+            "command": "./build.sh",
+            "windows": {
+                "command": "build.cmd"
+            },
             "problemMatcher": [],
             "group": {
                 "kind": "build",
