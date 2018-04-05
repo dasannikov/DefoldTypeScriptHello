@@ -5,10 +5,10 @@ export class Unit {
     private rotationRadius = 100;    
     private phase = 0;    
     private startPos = vmath.vector3();
-    private id: any = undefined;
+    private id: any = null;
     
     public update(dt: number) {
-        if(this.id == undefined) return
+        if(this.id == null) return
         this.phase += dt
         let pos = vmath.vector3(this.startPos);
         pos.x += math.cos(this.phase) * this.rotationRadius
