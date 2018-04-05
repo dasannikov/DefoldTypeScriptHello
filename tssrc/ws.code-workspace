@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.exclude": {
+			"*.code-workspace": true,
+			".gitignore": true,
+			".internal": true,
+			"game.project": true,
+			".vscode":true,
+			"build":true
+		}
+	}
+}
