@@ -1,3 +1,4 @@
+// Working dir: DefoldTypescriptHello/tssrc/
 // TS to Lua watch mode: $ tstl -p tsconfig.json --watch
 // Rename and move files watch mode: $ node build.js
 

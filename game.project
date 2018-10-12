@@ -9,8 +9,8 @@ game_binding = /input/game.input_bindingc
 use_accelerometer = 0
 
 [display]
-width = 1280
-height = 720
+width = 600
+height = 400
 
 [script]
 shared_state = 1

@@ -9,8 +9,8 @@ export class Unit {
 
     public init() {
         let startPos = vmath.vector3()
-        startPos.x = math.random(-Unit.randRadius + 600, Unit.randRadius + 600)
-        startPos.y = math.random(-Unit.randRadius + 300, Unit.randRadius + 300)
+        startPos.x = math.random(-Unit.randRadius + 300, Unit.randRadius + 300)
+        startPos.y = math.random(-Unit.randRadius + 200, Unit.randRadius + 200)
         startPos.z = 0
         this.id = factory.create("/main#factory")
         go.set_position(startPos, this.id);
