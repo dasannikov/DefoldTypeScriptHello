@@ -1,3 +1,7 @@
+key_trigger {
+  input: KEY_ESC
+  action: "close"
+}
 mouse_trigger {
   input: MOUSE_BUTTON_LEFT
   action: "click"

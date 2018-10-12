@@ -1,0 +1,10 @@
+{
+    "files.exclude": {
+        ".git*": true,
+        ".vscode": true,
+        "assets": true,
+        "build": true,
+        "game.project": true,
+        "tssrc": true
+    }
+}

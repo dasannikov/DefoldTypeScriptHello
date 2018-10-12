@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "/Users/dasannikov/Documents/Defold/DefoldTypeScriptHello"
 		}
 	],
 	"settings": {

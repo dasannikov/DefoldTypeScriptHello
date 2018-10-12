@@ -8,7 +8,8 @@
 
     "files": [
         "DefoldTypeScript/defold.d.ts",
-        "main.ts"
+        "DefoldTypeScript/defold.additional.d.ts",
+        "main.script.ts"
     ],
 
     "luaTarget": "JIT"

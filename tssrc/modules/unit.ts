@@ -1,28 +1,19 @@
-//@defold /scripts/modules/unit.lua
-
 export class Unit {
     
-    private rotationRadius = 100;    
-    private phase = 0;    
-    private startPos = vmath.vector3();
-    private id: any = null;
+    private static randRadius = 100;    
+    private id: hash;
     
-    public update(dt: number) {
-        if(this.id == null) return
-        this.phase += dt
-        let pos = vmath.vector3(this.startPos);
-        pos.x += math.cos(this.phase) * this.rotationRadius
-        pos.y += math.sin(this.phase) * this.rotationRadius
-        pos.x = math.ceil(pos.x);
-        pos.y = math.ceil(pos.y);
-        go.set_position(pos, this.id);
+    public static testStatic(a: number) {
+        print("Hello static. a = " + a)
     }
 
-    public create() {
-        this.phase = math.random()
-        this.startPos.x = math.random(200, 800)
-        this.startPos.y = math.random(200, 500)
-        this.startPos.z = 0
+    public init() {
+        let startPos = vmath.vector3()
+        startPos.x = math.random(-Unit.randRadius + 600, Unit.randRadius + 600)
+        startPos.y = math.random(-Unit.randRadius + 300, Unit.randRadius + 300)
+        startPos.z = 0
         this.id = factory.create("/main#factory")
+        go.set_position(startPos, this.id);
+        go.animate(this.id, 'position.x', go.PLAYBACK_LOOP_FORWARD, 100, go.EASING_LINEAR, 1)
     }
 }
