@@ -7,7 +7,7 @@ A minimal example of using TypeScript in Defold game engine. For more informatio
 - Install [Defold game engine](https://www.defold.com) and [VS Code](https://code.visualstudio.com)
 - Install [Node.js](https://nodejs.org/en/)
 - Install TypeScript to Lua transpiller `npm install -g typescript-to-lua` or from [GitHub repository](https://github.com/Perryvw/TypescriptToLua)
-- Clone this repository (!!do not download it! clone it! it has submodule)
+- Clone this repository (Or download from [releases](https://github.com/dasannikov/DefoldTypeScriptHello/releases))
 - Open workspace `DefoldTypeScriptHello\tssrc\DefoldTypeScriptHello.code-workspace` in VS Code.
 - Open working dir in 2 terminals: DefoldTypescriptHello/tssrc/
 - Run TypeScriptToLua compiler in one terminal (watch mode): `$ tstl -p tsconfig.json --watch`
