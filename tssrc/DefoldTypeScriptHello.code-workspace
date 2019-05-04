@@ -1,14 +1,10 @@
 {
-	"folders": [
-		{
-			"path": "."
-		},
-		{
-			"path": "/Users/dasannikov/Documents/Defold/DefoldTypeScriptHello"
-		}
-	],
-	"settings": {
-		"files.exclude": {
-		}
-	}
+    "folders": [
+        {
+            "path": "."
+        },
+    ],
+    "settings": {
+        "files.exclude": {}
+    }
 }
