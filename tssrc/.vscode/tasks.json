@@ -4,17 +4,22 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "TS to Lua",
+            "label": "Run watch mode to move *.lua files into Defold folders",
             "type": "shell",
-            "command": "./build.sh",
-            "windows": {
-                "command": "build.cmd"
-            },
+            "command": "node build.js",
             "problemMatcher": [],
             "group": {
                 "kind": "build",
                 "isDefault": true
             }
+        },
+        {
+            "label": "Run watch mode to convert TypeScript to Lua",
+            "type": "shell",
+            "command": "tstl -p tsconfig.json --watch",
+            "problemMatcher": [
+                "$tsc"
+            ]
         }
     ]
 }

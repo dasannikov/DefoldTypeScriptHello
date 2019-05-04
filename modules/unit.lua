@@ -1,5 +1,3 @@
-
--- Lua Library Imports
 local exports = exports or {}
 local Unit = Unit or {}
 Unit.__index = Unit

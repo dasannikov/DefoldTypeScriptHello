@@ -2,7 +2,9 @@
 -- Lua Library Imports
 function __TS__ArrayPush(arr,...)
     local items = { ... }
-    for _, item in ipairs(items) do
+    local __loopVariable0 = items;
+    for i0=1, #__loopVariable0 do
+        local item = __loopVariable0[i0];
         do
             arr[(#arr)+1] = item;
         end
@@ -16,7 +18,7 @@ local Unit = unit0.Unit
 local unitList = {};
 function resize(self,event,data)
     if event==window_.WINDOW_EVENT_RESIZED then
-        print("RESIZE");
+        print("RESIZE..");
     end
 end
 function init(self)
