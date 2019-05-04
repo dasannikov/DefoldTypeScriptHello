@@ -2,7 +2,8 @@
 
 # An example of using TypeScript in Defold game engine.
 A minimal example of using TypeScript in Defold game engine.
-Main [GitHub repository](https://github.com/dasannikov/DefoldTypeScript) for Defold TypeScript library.
+
+Main Defold TypeScript library is located in this [GitHub repository](https://github.com/dasannikov/DefoldTypeScript)
 
 ## How to run
 - Install [Defold game engine](https://www.defold.com) and [VS Code](https://code.visualstudio.com)
